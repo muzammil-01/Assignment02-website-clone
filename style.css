@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+
+/* =======================Styling for header=============================== */
+.toggle{
+    position: relative;
+    left: 90%;
+    top: 20px;
+    font-size: xx-large;
+    display: none;
+}
+.header-links li a{
+    text-decoration: none;
+}
+.header-links li{
+    list-style: none;
+}
+.color-gray{
+    color: #a998cb;
+    font-weight: bold;
+}
+.color-white{
+    color:#fff;
+    font-weight: bold;
+}
+.header-container,.banner{
+    background: url('./pics/cover_bg.svg')no-repeat;
+    background-size: cover;
+}
+header{
+    padding: 20px 0px 20px 0px;
+    background-color:rgba(0,0,0,.2);
+}
+.logo {
+    border-radius: 5px;
+}
+
+.header-links{
+    display: flex;
+    flex-wrap:wrap;
+    width: 85%;
+    margin: 0 auto;
+}
+.header-links li{
+    margin-right: 25px;
+}
+.header-links li:first-child{
+    margin-right: auto;
+}
+.header-links li{
+    align-self: center;
+    padding: 10px;
+}
+.border-right{
+    border-right: 1px solid rgba(168, 168, 168, 0.5);
+    margin-right: 13px;
+}
+.color-gray:hover{
+    color: white;
+    transition: .3s;
+}
+
+
+/* ===================================Styling for banner====================================== */
+.banner{
+   text-align: center;
+   height: 90vh;
+}
+.banner h1{
+    font-size: 70px;
+    margin-bottom: 16px;
+    padding-top:115px ;
+    color: white;
+    font-weight: normal;
+}
+.banner p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+.banner a{
+    margin: 2px 2px;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+.green{
+    background-color: #28CC9E;
+    color: white;
+    border: 1px solid #28CC9E;
+}
+.transparent{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.transparent:hover{
+    transition: .3s;
+    background: white;
+    color: black;
+}
+.green:hover{
+    background-color: rgba(178, 236, 178,1);
+    transition: .3s;
+}
+
+/* =================================Styling for more templates section ===================================== */
+
+.more-templates{
+    padding: 120px;
+    display: flex;
+}
+.more-templates-content{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.more-templates-content h1 ,.banner-2-content h1{
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.more-templates-content h3,.banner-2-content h3{
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: normal;
+}
+.more-templates-content p ,.banner-2-content p{
+    color: #6f6f6f;
+
+    margin-bottom: 2rem;
+}
+.more-templates-images {
+    position: relative;
+    padding-left:48px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more-templates-images div{
+      height: 250px;
+      overflow: hidden;
+  }
+.img{
+      width: 100%;
+      height: 280px;
+      
+    }
+    .first{
+        position: relative;
+    }
+.img1,.img2,.img3,.img4{
+    position: absolute;
+    font-size: x-large;
+    top:0px;
+    left: 0px;
+    padding: 120px;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    color: white;
+}
+.first:hover .img1,
+.first:hover .img2, 
+.first:hover .img3, 
+.first:hover .img4
+{
+    background: rgba(0,0,0,.4);
+    visibility: visible;
+    transition: .2s ;
+ 
+}
+
+
+/* =============================== Another Banner ================================== */
+.banner-2{
+    display: flex;
+    padding: 80px 0px 0px 100px;
+    background: url('./pics/cover_bg.svg') no-repeat;
+}
+.phone{
+    height: 532px;
+    overflow: hidden;
+}
+.phone img{
+    width: 100%;
+    vertical-align: middle;
+}
+.banner-2-content{
+    padding:0px 150px 32px 150px ;
+}
+.banner-2-content h2{
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+}
+.banner-2-content h3{
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+}
+.banner-2-content p{
+    color: rgba(255, 255, 255, 0.4);
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Icons before footer */
+.container{
+    margin: 0 auto;
+    padding: 100px;
+}
+.row{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.col{
+    flex: 1;
+    display: flex;
+}
+.col span{
+    padding: 0px 50px 0px 0px;
+}
+.col h5{
+    font-weight: normal;
+    color: black;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.col p{
+    margin-bottom: 1rem;
+    color: #6f6f6f;
+    line-height: 1.7;
+}
+.fa-fingerprint, .fa-user-friends,.fa-comments-alt{
+    color: #28CC9E;
+    font-size: 50px;
+}
+
+/* ==================  footer styling ================ */
+
+footer{
+    background: black;
+    padding: 100px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-container li{
+    list-style: none;
+}
+.footer-container li a{
+    text-decoration: none;
+}
+.footer-links ul li{
+    list-style: none;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    padding-left: 20px; ;
+}
+.footer-links{
+    display: flex;
+}
+.footer-links ul:first-child{
+    margin-right: auto;
+}
+.footer-links ul{
+    display: flex;
+}
+.social li{
+    margin: 0px 10px 10px 0px;
+    display: inline;
+}
+.social li a{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: xx-large;
+}
+.unlock h2{
+    font-weight: normal;
+}
+.unlock h2 a{
+    text-decoration: none;
+    color: white;
+}
+.footer-container h3{
+    font-size: 16px;
+    line-height: 1.7;
+    color: hsl(0, 0%, 44%) ;
+}
+.footer-container a{
+    color: white;
+}
+.footer-container a:hover,.footer-links a:hover{
+    color: #28CC9E;
+    transition: .3s;
+}
+.company li , .communities li, .usefullinks li{
+    line-height: 2.7;
+}
+.footer-links{
+    padding-top: 100px;
+}
+.footer-links a{
+    color: rgba(255, 255, 255, 0.4);
+    /* margin:0px 10px 10px 0; */
+}
+
+.footer-links small{
+    font-size: 80%;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================= Media Queries ============================================= */
+
+@media only screen and (max-width:770px)
+{
+    .toggle{
+        display: block;
+        color: white;
+        top: 50px;
+    }    
+    header{
+        background-color: black;
+    }
+   
+    .header-links{
+        display: block;
+    }
+    .header-links li{
+		margin: 10px 50px ;
+		width: 100%;
+        color: white !important;
+        background-color: transparent;
+    }
+    .header-links li a{
+        color: white;
+    }
+    .border-right{
+        display: none;
+    }
+    .banner h1{
+        padding-top: 25px ;
+    }
+    .banner a{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    .more-templates{
+        padding: 0px;
+        display: block;
+        width: 100% !important;
+    }
+    .more-templates-content{
+        padding: 20px;
+        width: 100%;
+    }
+    .more-templates-images{
+        display: block;
+        padding-left: 0;
+    }
+    .banner-2{
+        padding: 50px 50px 0px 50px;
+       flex-direction: column-reverse;
+       background-size: cover;
+    }
+    .banner-2-content{
+        padding: 0px;
+        width: 100%;
+    }
+    .row{
+        display: block;
+        width: 100%;
+    }
+    .footer-container{
+        display: block;
+    }
+    .footer-links {
+        display: block;
+    }
+    .img1,.img2,.img3,.img4{
+        padding-left:220px ;
+    }
+    .company h3 , .communities h3, .usefullinks h3{
+        margin-top: 20px;
+    }
+    .social{
+        margin-top: 20px;
+    }
+}
